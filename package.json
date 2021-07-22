@@ -1,0 +1,39 @@
+{
+  "name": "Discord-Presence-Manager",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "react:dev": "webpack serve --mode=development",
+    "electron:dev": "nodemon",
+    "dev": "concurrently --kill-others \"npm run react:dev\" \"npm run electron:dev\"",
+    "start": "npm run build && electron dist/main.js"
+  },
+  "repository": "https://github.com/kymppi/Discord-Presence-Manager.git",
+  "author": "Midka <me@midka.dev>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "autoprefixer": "^10.3.1",
+    "concurrently": "^6.2.0",
+    "electron": "^13.1.7",
+    "electron-is-dev": "^2.0.0",
+    "html-webpack-plugin": "^5.3.2",
+    "nodemon": "^2.0.12",
+    "postcss": "^8.3.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "tailwindcss": "^2.2.6",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.5",
+    "webpack": "^5.46.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "css-loader": "^6.2.0",
+    "postcss-loader": "^6.1.1",
+    "style-loader": "^3.2.1"
+  }
+}
